@@ -1,0 +1,14 @@
+*.aux*
+*.bcf*
+*.blg
+*.toc
+*.xml
+*.out
+*.fdb_latexmk
+*.fls
+*.log
+*svg-inkscape*
+*.bbl*
+report.pdf
+Makefile
+*.gz
