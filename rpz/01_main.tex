@@ -1,26 +1,28 @@
 \documentclass[a4paper,oneside,14pt]{extreport}
 
-\input{bmstu-setup}
-
-\include{00-packages}
+\input{00_packages}
 
 \bibliography{biblio}
 
 \begin{document}
 	\includepdf[pages={1},pagecommand={\thispagestyle{empty}}]{inc/title.pdf}
 	\setcounter{page}{3}
-	\include{ref}
+	\include{02_abstract}
 	\maketableofcontents
 	
-	\include{02-signs}
-	\include{03-introduction}
-	\include{08-conclusion}
+	\include{03_designations}
+	\include{04_introduction}
+	\include{05_analysis}
+	\include{06_design}
+	\include{07_technology}
+	\include{08_research}
+	\include{09_conclusion}
 	
 	\clearpage
 	\phantomsection
-	\chapter*{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+	\chapter*{\centering СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
 	\addcontentsline{toc}{chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
 	\printbibliography[heading=none]
 	\clearpage
-	\include{09-appendix}
+	\include{10_appendix_a}
 \end{document}
