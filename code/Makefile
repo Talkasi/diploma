@@ -68,7 +68,7 @@ run-importer-local:
 	cd backend && DB_HOST=$(DB_HOST) DB_PORT=$(DB_PORT) DB_USER=$(DB_USER) DB_PASSWORD=$(DB_PASSWORD) DB_NAME=$(DB_NAME) DB_SSLMODE=$(DB_SSLMODE) DB_MAX_CONNS=$(DB_MAX_CONNS) go run ./cmd/importer
 
 run-importer-container:
-	$(COMPOSE) run --rm $(API_SERVICE) ./importer
+	$(COMPOSE) run --rm --entrypoint ./importer $(API_SERVICE)
 
 test-local:
 	cd backend && go test ./...
